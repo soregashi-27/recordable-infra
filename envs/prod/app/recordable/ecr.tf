@@ -1,11 +1,11 @@
 module "nginx" {
   source = "../../../../modules/ecr"
 
-  name = "infra-prod-recordable-nginx"
+  name = "${local.name_prefix}-${local.service_name}-nginx"
 }
 
 module "php" {
   source = "../../../../modules/ecr"
 
-  name = "infra-prod-recordable-php"
+  name = "${local.name_prefix}-${local.service_name}-php"
 }
