@@ -21,15 +21,25 @@ Directoryに移動せずにフォーマットができる
 
 ### 使用コマンド
 
+リソースを作成、追加した場合につかう
 ```
 terraform init
 ```
+applyしようとしてできなかった場合CLIでもwarningでる
 
+変更の差分、作成されるリソースの確認
 ```
 terraform plan
 ```
-
+リソース追加を実施
 ```
 terraform apply
 ```
+
+費用を考慮して、nat gatewayを作成したくない場合
+```
+編集中
+```
+
+
 
