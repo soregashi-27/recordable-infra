@@ -2,7 +2,7 @@ resource "aws_route_table" "public" {
   vpc_id = aws_vpc.this.id
 
   tags = {
-    Name = "${aws_vpc.this.tags_Name}-public"
+    Name = "${aws_vpc.this.tags.Name}-public"
   }
 }
 
@@ -22,7 +22,7 @@ resource "aws_route_table_association" "public" {
 resource "aws_route_table" "private" {
   for_each = var.azs
 
-  vpc_id = aws_vpc_this.id
+  vpc_id = aws_vpc.this.id
 
   tags = {
     Name = "${aws_vpc.this.tags.Name}-private-${each.key}"
