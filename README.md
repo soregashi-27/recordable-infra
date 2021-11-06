@@ -41,5 +41,8 @@ terraform apply
 terraform apply -var='enable_nat_gateway=false'
 ```
 
-
+## 対象ドメインのネームサーバー設定の確認
+```
+nslookup -type=NS recordable.jp
+```
 
