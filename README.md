@@ -38,7 +38,7 @@ terraform apply
 
 費用を考慮して、nat gatewayを作成したくない場合
 ```
-編集中
+terraform apply -var='enable_nat_gateway=false'
 ```
 
 
