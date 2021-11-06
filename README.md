@@ -45,4 +45,4 @@ terraform apply -var='enable_nat_gateway=false'
 ```
 nslookup -type=NS recordable.jp
 ```
-
+※ネームサーバの切換は最大72時間掛かる場合があるので注意すること
