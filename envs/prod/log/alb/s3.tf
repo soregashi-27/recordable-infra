@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "this" {
-  bucket = "soregashi27-${local.name_prefix}-alb-log"
+  bucket = "recordable-${local.name_prefix}-alb-log"
 
   server_side_encryption_configuration {
     rule {
@@ -10,7 +10,7 @@ resource "aws_s3_bucket" "this" {
   }
 
   tags = {
-    Name = "soregashi27-${local.name_prefix}-alb-log"
+    Name = "recordable-${local.name_prefix}-alb-log"
   }
 
   lifecycle_rule {
