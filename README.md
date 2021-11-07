@@ -46,3 +46,18 @@ terraform apply -var='enable_nat_gateway=false'
 nslookup -type=NS recordable.jp
 ```
 ※ネームサーバの切換は最大72時間掛かる場合があるので注意すること
+
+
+-----------
+
+**`terraform init`の補足** \
+terraform を実行するためには、1番初めに terraform init でワークスペースを初期化することが必須 \
+.tfファイルでつかっているaws providerなどをダウンロードする（依存ライブラリのロックファイルという理解にとどまっている） 
+
+参考：「.terraform.lock.hcl 完全に理解した」 \
+https://speakerdeck.com/minamijoyo/how-to-update-terraform-dot-lock-dot-hcl-efficiently
+
+
+Terraformのtfstateファイルを消すとどうなるか【結論消さない】 \
+https://qiita.com/sicksixrock66/items/d42b751fe6ffc6ce396e
+消してまた再構築するのはかなり大変。（工数爆食いする）
