@@ -6,7 +6,8 @@
 <img src="https://img.shields.io/badge/-Terraform-EEE.svg?logo=terraform&logoColor=7B42BC">
 
 recordableのinfra repository。 \
-（次回のバージョンアップ時に利用する予定）
+（次回のバージョンアップ時に利用する予定） \
+https://bit.ly/3Djm7ZW
 
 アプリケーションのソースコード詳細はrecorableをご覧ください。 \
 https://github.com/soregashi-27/recordable
