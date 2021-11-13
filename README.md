@@ -1,4 +1,5 @@
-**※初期リリースでの使用を中止しました。**
+**※初期リリースでの使用を中止しました。** \
+https://bit.ly/3Djm7ZW
 
 # recordable-infra
 
@@ -7,7 +8,6 @@
 
 recordableのinfra repository。 \
 （次回のバージョンアップ時に利用する予定） \
-https://bit.ly/3Djm7ZW
 
 アプリケーションのソースコード詳細はrecorableをご覧ください。 \
 https://github.com/soregashi-27/recordable
